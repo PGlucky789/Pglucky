@@ -51,7 +51,9 @@
     async function sendShare() {
       const result = await liff.shareTargetPicker([{
         "type": "flex",
-        "altText": "โอนให้แล้วนะ 5000",
+        "altText": "โอนให้แล้วนะ 100",
+    "type": "flex",
+    "contents": {
   "type": "bubble",
   "size": "giga",
   "hero": {
@@ -99,7 +101,8 @@
     "borderColor": "#E67810"
   }
 }
-      }])
+}       
+                                                   }])
       if (result) {
       alert(`[${result.status}] แชร์สำเร็จ`)
         liff.closeWindow()
