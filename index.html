@@ -49,8 +49,9 @@
   <script charset="utf-8" src="https://static.line-scdn.net/liff/edge/2/sdk.js?s=224323"></script>
   <script>
     async function sendShare() {
-      const result = await liff.shareTargetPicker([
-        {
+      const result = await liff.shareTargetPicker([{
+        "type": "flex",
+        "altText": "โอนให้แล้วนะ 5000",
   "type": "bubble",
   "size": "giga",
   "hero": {
